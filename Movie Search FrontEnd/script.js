@@ -5,7 +5,7 @@ async function movieSearch() {
     if(movieName.trim() === "") {
         movieResult.textContent = "Enter a movie name";
     } else {
-        let url = `http://localhost:8080/movie?name=${movieName}`
+        let url = `https://moviesearchbackend-j0to.onrender.com/movie?name=${movieName}`
 
         let response = await fetch(url);
         let data = await response.json();
